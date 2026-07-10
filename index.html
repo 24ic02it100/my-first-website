@@ -51,7 +51,7 @@
             letter-spacing: 2px;
         }
         
-        /* Modern Flexbox Grid Layout (Mobile Responsive) */
+        /* Modern Flexbox Grid Layout */
         .products-grid {
             display: flex;
             gap: 20px;
@@ -64,24 +64,22 @@
             text-align: center;
             border: 1px solid #eee;
             flex: 1;
-            min-width: 280px; /* Mobile standard sizing */
+            min-width: 280px;
             box-sizing: border-box;
         }
         .product-img-box {
             background-color: #eee;
-            height: 250px;
+            height: 350px; /* Thoda height bada kiya hai premium look ke liye */
             margin-bottom: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            color: #888;
             overflow: hidden;
         }
         .product-img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Taki images perfectly fit ho jayein bina stretch hue */
+            object-fit: cover; /* Image stretch nahi hogi aur perfectly fit dikhegi */
         }
         .product-title {
             font-size: 18px;
@@ -133,34 +131,27 @@
         <div class="section-title">Our Best Sellers</div>
         
         <div class="products-grid">
-            <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-img-box">
-                    <!-- Agar actual image lagani ho toh niche wali line ka use karein, nahi toh abhi placeholder text dikhega -->
-                    <!-- <img src="images/oversized-tshirt.jpg" alt="Oversized Cotton T-Shirt" class="product-img"> -->
-                    [ Shirt Image Here ]
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500&auto=format&fit=crop&q=80" alt="Oversized Cotton T-Shirt" class="product-img">
                 </div>
                 <div class="product-title">Oversized Cotton T-Shirt</div>
                 <div class="product-price">₹999</div>
                 <a href="#" class="buy-btn">Buy Now</a>
             </div>
             
-            <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-img-box">
-                    <!-- <img src="images/classic-hoodie.jpg" alt="Classic Urban Hoodie" class="product-img"> -->
-                    [ Hoodie Image Here ]
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&auto=format&fit=crop&q=80" alt="Classic Urban Hoodie" class="product-img">
                 </div>
                 <div class="product-title">Classic Urban Hoodie</div>
                 <div class="product-price">₹1,999</div>
                 <a href="#" class="buy-btn">Buy Now</a>
             </div>
             
-            <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-img-box">
-                    <!-- <img src="images/relaxed-cargo.jpg" alt="Relaxed Fit Cargo Pants" class="product-img"> -->
-                    [ Cargo Image Here ]
+                    <img src="https://images.unsplash.com/photo-1517423568366-8b83523034fd?w=500&auto=format&fit=crop&q=80" alt="Relaxed Fit Cargo Pants" class="product-img">
                 </div>
                 <div class="product-title">Relaxed Fit Cargo Pants</div>
                 <div class="product-price">₹1,499</div>
