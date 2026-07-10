@@ -1,9 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA & CO. | Premium Clothing Brand</title>
+    <style>
+        /* CSS Styling - Website ko sundar banane ke liye */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .hero {
+            background-color: #f0e6df;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #666;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        /* Products Grid Layout */
+        .products-grid {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+        .product-card {
+            display: table-cell;
+            background: #fff;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #eee;
+            width: 33.33%;
+        }
+        .product-img-box {
+            background-color: #eee;
+            height: 250px;
+            line-height: 250px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #888;
+        }
+        .product-title {
+            font-size: 18px;
+            margin: 10px 0 5px 0;
+            font-weight: 600;
+        }
+        .product-price {
+            color: #b12704;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .buy-btn {
+            background-color: #111;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+        .buy-btn:hover {
+            background-color: #444;
+        }
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World! Meri website live ho gayi hai.</h1>
+
+    <header>
+        <h1>URBAN WEAR</h1>
+    </header>
+
+    <div class="hero">
+        <h2>SUMMER COLLECTION 2026</h2>
+        <p>Get up to 40% off on all premium outfits.</p>
+    </div>
+
+    <div class="container">
+        <div class="section-title">Our Best Sellers</div>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img-box">[ Shirt Image Here ]</div>
+                <div class="product-title">Oversized Cotton T-Shirt</div>
+                <div class="product-price">₹999</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            
+            <div class="product-card" style="border-left: none; border-right: none;">
+                <div class="product-img-box">[ Hoodie Image Here ]</div>
+                <div class="product-title">Classic Urban Hoodie</div>
+                <div class="product-price">₹1,999</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-img-box">[ Cargo Image Here ]</div>
+                <div class="product-title">Relaxed Fit Cargo Pants</div>
+                <div class="product-price">₹1,499</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Urban Wear. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
